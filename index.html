@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+	<script src="paint.js"></script>
+</head>
+<style>
+	canvas{display: block;margin:auto;border: 1px solid #333;}
+	#buttons{left:30%; position:relative;}
+</style>
+<body>
+	<div id="buttons">	
+		<input type="button" id="delete_canvas" value="clear">
+		<input type="button" id="arrow" value="arrow">
+		<input type="button" id="circle" value="circle">
+		<input type="button" id="rect" value="rect">
+		<input type="button" id="line" value="line">
+	</div>
+	<canvas id="myCanvas" width="600" height="400"></canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+canvasArrow(canvas,"#00a497", 0, true);
+</script>
+</body>
+</html>
